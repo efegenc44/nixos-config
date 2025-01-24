@@ -24,9 +24,6 @@ in
 
     spotify
 
-    texliveBasic
-    biber
-
     vscode
     kdePackages.kate
 
