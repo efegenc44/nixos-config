@@ -17,6 +17,7 @@ in
   home.packages = with pkgs; [
     fastfetch
     btop
+    wget
 
     libgcc
     rustup
