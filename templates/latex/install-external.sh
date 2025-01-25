@@ -4,13 +4,11 @@ function installPackage {
     url=$1
     name=$2
 
-    prefix=./packages/$name
-    folder=$prefix
-    flag="-f"
+    folder=./packages/$name
 
     # Download if file is not already downloaded
     if [ ! -d $folder ]; then
-        wget --quiet $url -P $prefix
+        wget --quiet $url -P $folder
         echo "External package '$name' downloaded."
     else
         echo "External package '$name' already exists."
